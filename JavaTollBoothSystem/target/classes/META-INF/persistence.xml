@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <!--
+        Persistence Unit: TollSystemPU
+        ================================
+        Provider  : Hibernate (hibernate-entitymanager / hibernate-core)
+        Database  : H2 in-memory (jdbc:h2:mem:tolldb)
+        Schema    : Auto-created by Hibernate (hbm2ddl.auto = update)
+
+        Dependencies required (see pom.xml):
+            - org.hibernate:hibernate-core
+            - com.h2database:h2
+    -->
+    <persistence-unit name="TollSystemPU" transaction-type="RESOURCE_LOCAL">
+
+        <!-- Hibernate as the JPA provider -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- Managed entity classes -->
+        <class>com.tollsystem.entity.VehiclePassEntity</class>
+
+        <!-- Do not include all classes not listed above -->
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <properties>
+            <!-- JDBC Connection (H2 in-memory) -->
+            <property name="javax.persistence.jdbc.driver"   value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.url"      value="jdbc:h2:mem:tolldb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE"/>
+            <property name="javax.persistence.jdbc.user"     value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+
+            <!-- Hibernate dialect for H2 -->
+            <property name="hibernate.dialect"               value="org.hibernate.dialect.H2Dialect"/>
+
+            <!-- Schema generation: update existing schema, or create if absent -->
+            <property name="hibernate.hbm2ddl.auto"          value="update"/>
+
+            <!-- SQL logging (set to false in production) -->
+            <property name="hibernate.show_sql"              value="false"/>
+            <property name="hibernate.format_sql"            value="false"/>
+
+            <!-- Connection pool settings -->
+            <property name="hibernate.connection.pool_size"  value="5"/>
+
+            <!-- Disable second-level cache for simplicity -->
+            <property name="hibernate.cache.use_second_level_cache" value="false"/>
+        </properties>
+    </persistence-unit>
+</persistence>

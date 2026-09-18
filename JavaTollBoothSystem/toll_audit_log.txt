@@ -1,0 +1,45 @@
+TxnID|RegNum|VehicleType|TollAmount|RemainingBalance|Lane|Timestamp|Status|Message
+--- SESSION START: 2026-09-16 20:22:58 ---
+[EVENT | 2026-09-16 20:23:02] SYSTEM SHUTDOWN
+--- SESSION START: 2026-09-16 20:38:29 ---
+--- SESSION START: 2026-09-16 20:39:34 ---
+--- SESSION START: 2026-09-18 22:34:38 ---
+[EVENT | 2026-09-18 22:34:41] System shutting down.
+--- SESSION START: 2026-09-18 22:42:46 ---
+[EVENT | 2026-09-18 22:42:48] System shutting down.
+--- SESSION START: 2026-09-18 22:55:19 ---
+[EVENT | 2026-09-18 22:55:22] System shutting down.
+--- SESSION START: 2026-09-18 22:55:30 ---
+1000|MH12AA1001|CAR|80.00|420.00|1|2026-09-18 22:55:32|SUCCESS|Toll collected successfully
+1002|GJ01ZZ9001|TRUCK|800.00|600.00|3|2026-09-18 22:55:32|SUCCESS|Toll collected successfully
+1001|MH12AA1002|CAR|0.00|40.00|2|2026-09-18 22:55:32|FAILED|FAILED: Insufficient FASTag balance for vehicle [MH12AA1002]. Available: INR 40.00, Required: INR 80.00, Shortfall: INR 40.00.
+1003|KA04GT4001|BUS|150.00|150.00|2|2026-09-18 22:55:32|SUCCESS|Toll collected successfully
+1004|DL03BU3001|BUS|300.00|450.00|1|2026-09-18 22:55:32|SUCCESS|Toll collected successfully
+[EVENT | 2026-09-18 22:55:32] System shutting down.
+--- SESSION START: 2026-09-18 22:55:53 ---
+--- SESSION START: 2026-09-18 23:01:29 ---
+[EVENT | 2026-09-18 23:01:31] Automated end-to-end demo initiated.
+1000|MH12AA1001|CAR|80.00|420.00|1|2026-09-18 23:01:31|SUCCESS|Toll collected successfully
+1001|DL01TA2002|CAR|120.00|180.00|2|2026-09-18 23:01:31|SUCCESS|Toll collected successfully
+1002|MH14BB3003|CAR|0.00|30.00|3|2026-09-18 23:01:31|FAILED|FAILED: Insufficient FASTag balance for vehicle [MH14BB3003]. Available: INR 30.00, Required: INR 80.00, Shortfall: INR 50.00.
+1003|RJ14TR6006|TRUCK|1050.00|1450.00|3|2026-09-18 23:01:31|SUCCESS|Toll collected successfully
+1004|HR26CC4004|CAR|0.00|500.00|1|2026-09-18 23:01:31|FAILED|FAILED: Unauthorized vehicle detected [HR26CC4004]. Reason: NO_FASTAG. Please proceed to the manual toll booth.
+1005|GJ01ZZ5005|TRUCK|450.00|1050.00|2|2026-09-18 23:01:31|SUCCESS|Toll collected successfully
+1006|UP32BS7007|BUS|200.00|600.00|1|2026-09-18 23:01:31|SUCCESS|Toll collected successfully
+1007|KA04GT8008|BUS|225.00|375.00|2|2026-09-18 23:01:32|SUCCESS|Toll collected successfully
+[EVENT | 2026-09-18 23:01:32] Automated end-to-end demo completed successfully.
+[EVENT | 2026-09-18 23:01:32] System shutting down.
+--- SESSION START: 2026-09-18 23:01:37 ---
+[EVENT | 2026-09-18 23:01:39] System shutting down.
+--- SESSION START: 2026-09-18 23:03:48 ---
+[EVENT | 2026-09-18 23:05:58] Automated end-to-end demo initiated.
+1000|MH12AA1001|CAR|80.00|420.00|1|2026-09-18 23:05:58|SUCCESS|Toll collected successfully
+1001|DL01TA2002|CAR|120.00|180.00|2|2026-09-18 23:05:58|SUCCESS|Toll collected successfully
+1002|MH14BB3003|CAR|0.00|30.00|3|2026-09-18 23:05:58|FAILED|FAILED: Insufficient FASTag balance for vehicle [MH14BB3003]. Available: INR 30.00, Required: INR 80.00, Shortfall: INR 50.00.
+1003|RJ14TR6006|TRUCK|1050.00|1450.00|3|2026-09-18 23:05:58|SUCCESS|Toll collected successfully
+1004|HR26CC4004|CAR|0.00|500.00|1|2026-09-18 23:05:58|FAILED|FAILED: Unauthorized vehicle detected [HR26CC4004]. Reason: NO_FASTAG. Please proceed to the manual toll booth.
+1005|GJ01ZZ5005|TRUCK|450.00|1050.00|2|2026-09-18 23:05:58|SUCCESS|Toll collected successfully
+1006|UP32BS7007|BUS|200.00|600.00|1|2026-09-18 23:05:58|SUCCESS|Toll collected successfully
+1007|KA04GT8008|BUS|225.00|375.00|2|2026-09-18 23:05:58|SUCCESS|Toll collected successfully
+[EVENT | 2026-09-18 23:05:59] Automated end-to-end demo completed successfully.
+[EVENT | 2026-09-18 23:08:07] System shutting down.
